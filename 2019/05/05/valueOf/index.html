@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>valueOf | CatAndFish</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="valueOf 描述 valueOf方法是将对象转换为“原始值”  默认情况下，valueOf方法由Object后面的每个对象继承。  如果对象没有原始值，则valueOf将返回对象本身。  对象返回值Array返回数组对象本身Boolean布尔值Date存储的时间是从 1970 年 1 月 1 日午夜开始计的毫秒数 UTC。Function函数本身Number数值Object对象本身String">
+<meta name="keywords" content="JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="valueOf">
+<meta property="og:url" content="https://wty625073563.github.io/blog/2019/05/05/valueOf/index.html">
+<meta property="og:site_name" content="CatAndFish">
+<meta property="og:description" content="valueOf 描述 valueOf方法是将对象转换为“原始值”  默认情况下，valueOf方法由Object后面的每个对象继承。  如果对象没有原始值，则valueOf将返回对象本身。  对象返回值Array返回数组对象本身Boolean布尔值Date存储的时间是从 1970 年 1 月 1 日午夜开始计的毫秒数 UTC。Function函数本身Number数值Object对象本身String">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="en-resource://database/578:1">
+<meta property="og:updated_time" content="2020-04-17T14:59:12.481Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="valueOf">
+<meta name="twitter:description" content="valueOf 描述 valueOf方法是将对象转换为“原始值”  默认情况下，valueOf方法由Object后面的每个对象继承。  如果对象没有原始值，则valueOf将返回对象本身。  对象返回值Array返回数组对象本身Boolean布尔值Date存储的时间是从 1970 年 1 月 1 日午夜开始计的毫秒数 UTC。Function函数本身Number数值Object对象本身String">
+<meta name="twitter:image" content="en-resource://database/578:1">
+  
+    <link rel="alternate" href="/atom.xml" title="CatAndFish" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    
+  
+  <link rel="stylesheet" href="/blog/css/style.css">
+  
+
+<link rel="stylesheet" href="/blog/css/prism.css" type="text/css"></head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="header-outer">
+    <div id="header-title">
+      <img src="/blog/images/computer-3.png" class="header-title-logo" alt="logo">
+      <h1 id="logo-wrap">
+        <a href="/blog/" id="logo">CatAndFish</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/blog/" id="subtitle">123456</a>
+        </h2>
+      
+    </div>
+
+    <div id="header-inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/blog/">首页</a>
+        
+          <a class="main-nav-link" href="/blog/archives">归档</a>
+        
+          <a class="main-nav-link" href="/blog/about">关于</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://wty625073563.github.io/blog"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-valueOf" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2019/05/05/valueOf/" class="article-date">
+  <time datetime="2019-05-05T15:48:18.000Z" itemprop="datePublished">2019-05-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      valueOf
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- Table of Contents -->
+        
+        <h3 id="valueOf-NaN"><a href="#valueOf-NaN" class="headerlink" title="valueOf"></a>valueOf</h3><h5 id="描述"><a href="#描述" class="headerlink" title="描述"></a>描述</h5><a id="more"></a>
+<p>valueOf方法是将对象转换为“原始值”</p>
+<p>默认情况下，valueOf方法由Object后面的每个对象继承。</p>
+<p>如果对象没有原始值，则valueOf将返回对象本身。</p>
+<table>
+<thead>
+<tr>
+<th><strong>对象</strong></th>
+<th><strong>返回值</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Array</strong></td>
+<td>返回数组对象本身</td>
+</tr>
+<tr>
+<td><strong>Boolean</strong></td>
+<td>布尔值</td>
+</tr>
+<tr>
+<td><strong>Date</strong></td>
+<td>存储的时间是从 1970 年 1 月 1 日午夜开始计的毫秒数 UTC。</td>
+</tr>
+<tr>
+<td><strong>Function</strong></td>
+<td>函数本身</td>
+</tr>
+<tr>
+<td><strong>Number</strong></td>
+<td>数值</td>
+</tr>
+<tr>
+<td><strong>Object</strong></td>
+<td>对象本身</td>
+</tr>
+<tr>
+<td><strong>String</strong></td>
+<td>字符串值</td>
+</tr>
+<tr>
+<td></td>
+<td>Math 和 Error 对象没有valueOf方法</td>
+</tr>
+</tbody>
+</table>
+<h6 id="什么是原始值"><a href="#什么是原始值" class="headerlink" title="什么是原始值"></a>什么是原始值</h6><p>在ECMAScript中，变量可以存在两种<strong>类型</strong>的值，即原始值和引用值。</p>
+<p><strong>原始值</strong><br>    存储在栈（stack）中的简单数据段，也就是说，他们的值直接存储在变量访问的位置。</p>
+<p><strong>引用值</strong><br>    存储在堆（heap）中的对象，也就是说，存储在变量处的值是一个指针（point），指向存储对象的内存处。</p>
+<p><u>详细解释参考</u><a href="http://www.w3school.com.cn/js/pro_js_value.asp" target="_blank" rel="noopener">ECMAScript 原始值和引用值</a></p>
+<p><img src="en-resource://database/578:1" alt="605dab694f82b63cc18932fd31dcc537.gif"></p>
+<blockquote>
+<p>ECMAScript 6 引入了一种新的原始类型： <strong>symbol</strong> 。</p>
+</blockquote>
+<h6 id="验证输出"><a href="#验证输出" class="headerlink" title="验证输出"></a>验证输出</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre class=" language-hljs javascript"><span class="hljs-comment">// Array</span><br><span class="hljs-keyword">var</span> ary = [<span class="hljs-number">1</span>, <span class="hljs-string">'a'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123; &#125;]<br><span class="hljs-keyword">var</span> ary2 = ary.valueOf()<br><span class="hljs-built_in">console</span>.log( ary2 ) <span class="hljs-comment">// [1, "a", f]</span><br><span class="hljs-built_in">console</span>.log( ary == ary2 ) <span class="hljs-comment">// true</span><br><span class="hljs-built_in">console</span>.log( ary === ary2 ) <span class="hljs-comment">// true</span><br><br><span class="hljs-comment">// Boolean</span><br><span class="hljs-keyword">var</span> bool = <span class="hljs-literal">true</span><br><span class="hljs-keyword">var</span> bool2 = bool.valueOf()<br><span class="hljs-comment">// ...同上</span><br><br><span class="hljs-comment">// new Boolean</span><br><span class="hljs-keyword">var</span> bool3 = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Boolean</span>(<span class="hljs-literal">true</span>)<br><span class="hljs-keyword">var</span> bool4 = bool3.valueOf()<br><span class="hljs-built_in">console</span>.log(bool3, bool4) <span class="hljs-comment">// Boolean &#123;true&#125;, true</span><br><span class="hljs-built_in">console</span>.log(bool3 == bool4) <span class="hljs-comment">// true</span><br><span class="hljs-built_in">console</span>.log(bool3 === bool4) <span class="hljs-comment">// false</span><br><br><span class="hljs-comment">// Date</span><br><span class="hljs-keyword">var</span> date = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">2013</span>, <span class="hljs-number">7</span>, <span class="hljs-number">18</span>, <span class="hljs-number">23</span>, <span class="hljs-number">11</span>, <span class="hljs-number">59</span>, <span class="hljs-number">230</span>);<br><span class="hljs-built_in">console</span>.log(date.valueOf());   <span class="hljs-comment">// 1376838719230</span><br><br><span class="hljs-comment"><code class="language-hljs javascript"><span class="hljs-comment">// Array</span><br><span class="hljs-keyword">var</span> ary = [<span class="hljs-number">1</span>, <span class="hljs-string">'a'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123; &#125;]<br><span class="hljs-keyword">var</span> ary2 = ary.valueOf()<br><span class="hljs-built_in">console</span>.log( ary2 ) <span class="hljs-comment">// [1, "a", f]</span><br><span class="hljs-built_in">console</span>.log( ary == ary2 ) <span class="hljs-comment">// true</span><br><span class="hljs-built_in">console</span>.log( ary === ary2 ) <span class="hljs-comment">// true</span><br><br><span class="hljs-comment">// Boolean</span><br><span class="hljs-keyword">var</span> bool = <span class="hljs-literal">true</span><br><span class="hljs-keyword">var</span> bool2 = bool.valueOf()<br><span class="hljs-comment">// ...同上</span><br><br><span class="hljs-comment">// new Boolean</span><br><span class="hljs-keyword">var</span> bool3 = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Boolean</span>(<span class="hljs-literal">true</span>)<br><span class="hljs-keyword">var</span> bool4 = bool3.valueOf()<br><span class="hljs-built_in">console</span>.log(bool3, bool4) <span class="hljs-comment">// Boolean &#123;true&#125;, true</span><br><span class="hljs-built_in">console</span>.log(bool3 == bool4) <span class="hljs-comment">// true</span><br><span class="hljs-built_in">console</span>.log(bool3 === bool4) <span class="hljs-comment">// false</span><br><br><span class="hljs-comment">// Date</span><br><span class="hljs-keyword">var</span> date = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(<span class="hljs-number">2013</span>, <span class="hljs-number">7</span>, <span class="hljs-number">18</span>, <span class="hljs-number">23</span>, <span class="hljs-number">11</span>, <span class="hljs-number">59</span>, <span class="hljs-number">230</span>);<br><span class="hljs-built_in">console</span>.log(date.valueOf());   <span class="hljs-comment">// 1376838719230</span><br><br><span class="hljs-comment">// ... and so on</span><br></code></pre></td></tr></table></figure>
+<h5 id="延伸"><a href="#延伸" class="headerlink" title="延伸"></a>延伸</h5><p>近期看到的一道面试题：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre class=" language-hljs javascript"><br><span class="hljs-keyword">var</span> result = +&#123;<br>    <span class="hljs-attr">a</span>: <span class="hljs-number">1</span>,<br>    <span class="hljs-attr">toString</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123; <span class="hljs-keyword">return</span> <span class="hljs-string">'10'</span> &#125;,<br>    <span class="hljs-attr">valueOf</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123; <span class="hljs-keyword">return</span> <span class="hljs-number">100</span> &#125;<br>&#125;<br><br><span class="hljs-built_in"><code class="language-hljs javascript"><br><span class="hljs-keyword">var</span> result = +&#123;<br>    <span class="hljs-attr">a</span>: <span class="hljs-number">1</span>,<br>    <span class="hljs-attr">toString</span>: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>&#123; <span class="hljs-keyword">return</span> <span class="hljs-string">'10'</span> &#125;,<br>    <span class="hljs-attr">valueOf</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>&#123; <span class="hljs-keyword">return</span> <span class="hljs-number">100</span> &#125;<br>&#125;<br><br><span class="hljs-built_in">console</span>.log(result)<br></code></pre></td></tr></table></figure></p>
+<p>结果是 100<br>此处考点有对象的类型转化、toString() 和 valueOf() 调用的优先程度。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://wty625073563.github.io/blog/2019/05/05/valueOf/" data-id="ckcyyd31o00056xu2enqklpxk" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/JavaScript/">JavaScript</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+ <script src="/blog/jquery/jquery.min.js"></script>
+  <div id="random_posts">
+    <h2>推荐文章</h2>
+    <div class="random_posts_ul">
+      <script>
+          var random_count =3
+          var site = {BASE_URI:'/blog/'};
+          function load_random_posts(obj) {
+              var arr=site.posts;
+              if (!obj) return;
+              // var count = $(obj).attr('data-count') || 6;
+              for (var i, tmp, n = arr.length; n; i = Math.floor(Math.random() * n), tmp = arr[--n], arr[n] = arr[i], arr[i] = tmp);
+              arr = arr.slice(0, random_count);
+              var html = '<ul>';
+            
+              for(var j=0;j<arr.length;j++){
+                var item=arr[j];
+                html += '<li><strong>' + 
+                item.date + ':&nbsp;&nbsp;<a href="' + (site.BASE_URI+item.uri) + '">' + 
+                (item.title || item.uri) + '</a></strong>';
+                if(item.excerpt){
+                  html +='<div class="post-excerpt">'+item.excerpt+'</div>';
+                }
+                html +='</li>';
+                
+              }
+              $(obj).html(html + '</ul>');
+          }
+          $('.random_posts_ul').each(function () {
+              var c = this;
+              if (!site.posts || !site.posts.length){
+                  $.getJSON(site.BASE_URI + 'js/posts.js',function(json){site.posts = json;load_random_posts(c)});
+              } 
+               else{
+                load_random_posts(c);
+              }
+          });
+      </script>
+    </div>
+  </div>
+
+    
+<nav id="article-nav">
+  
+    <a href="/blog/2019/05/25/阅读汤姆大叔的深入理解JavaScript系列要点/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">上一篇</strong>
+      <div class="article-nav-title">
+        
+          阅读汤姆大叔的深入理解JavaScript系列要点
+        
+      </div>
+    </a>
+  
+  
+    <a href="/blog/2019/01/05/工作中踩坑记录/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">工作中踩坑记录</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+ 
+     
+  <div class="comments" id="comments">
+    
+     
+       
+      <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
+    
+       
+      
+      
+  </div>
+ 
+  
+
+</section>
+           
+    <aside id="sidebar">
+  
+    
+    <div class="widget-wrap">
+    
+      <div class="widget" id="toc-widget-fixed">
+      
+        <strong class="toc-title">文章目录</strong>
+        <div class="toc-widget-list">
+              <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#valueOf-NaN"><span class="toc-number">1.</span> <span class="toc-text">valueOf</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#描述"><span class="toc-number">1.0.1.</span> <span class="toc-text">描述</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#什么是原始值"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">什么是原始值</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#验证输出"><span class="toc-number">1.0.1.2.</span> <span class="toc-text">验证输出</span></a></li></ol></li><li class="toc-item toc-level-5"><a class="toc-link" href="#延伸"><span class="toc-number">1.0.2.</span> <span class="toc-text">延伸</span></a></li></ol></li></ol></li></ol>
+          </div>
+      </div>
+    </div>
+
+  
+    
+
+  
+    
+  
+    
+  
+    
+
+  
+</aside>
+
+      </div>
+      <footer id="footer">
+  
+  <!-- <div class="outer">
+    <div id="footer-left">
+      &copy; 2014 - 2020 Woods&nbsp;|&nbsp;
+      主题 <aouter href="https://github.com/giscafer/hexo-theme-cafe/" target="_blank">Cafe</a>
+    </div>
+     <div id="footer-right">
+      联系方式&nbsp;|&nbsp;youemail@outlook.com
+    </div>
+  </div> -->
+  <div class="footer-box">
+    <div class="footer-left">
+      <a href="//alex-b.me" class="btn start-button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQBAMAAADt3eJSAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAG1BMVEUAAAAAAADAwMD///8AAP+AAACAgID/AAAAAIC2iZvFAAAAAXRSTlMAQObYZgAAAAFiS0dEAxEMTPIAAAAHdElNRQfiBhoANiXlpBdAAAAAaElEQVQI1y3NwQ2AMAwDQPfHs24nSMsCpGIAJBZAqAuwASugPhgbUvAnJ1lyAMCRHhayi/zg+k0/ytSbIGUxBA1F/Ys4xq9KKkUMOUebcVSNYssU7mo4lHU+geHOUusGtPVq/ff9xvAACOUPXEMBgOAAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTgtMDYtMjZUMDA6NTQ6MzctMDQ6MDCz5MrgAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE4LTA2LTI2VDAwOjU0OjM3LTA0OjAwwrlyXAAAAABJRU5ErkJggg==" class="icon-16">Author</a>
+      <a href="https://github.com/AlexBSoft/win95.css" class="btn start-button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAUVBMVEUAAACZmQBmZpkzM2b//////5nM///M7P/MzGZmmcyZzMyGhoaysrIAAACWlpZCQkIzM5lVVVX/zJnMZmaAAADMMwD//8z/zGb/MwCZMwAzMwBD7H0AAAAAAXRSTlMAQObYZgAAAAFiS0dEBI9o2VEAAAAHdElNRQfiBhgXAy5jJ3EAAAAAeUlEQVQY043M2xLCIAxF0TQh9IKntQjW+v8fKhHKjG/uGR7OGoCIhhKxkDAzlQanquxYnPOjlD1Z4mUel3DzUi5Y4oGwBASpL3TFtt5nEPYK0Q4Y/c8iUR8pdbCdn0dGA9sx6ets8N3a4SodFejd6nD1B+TzFwiw/QHAfwekWKd/2AAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNi0yNFQyMzowMzo0Ni0wNDowMFfZ8nYAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDYtMjRUMjM6MDM6NDYtMDQ6MDAmhErKAAAAAElFTkSuQmCC" class="icon-16"> GitHub</a>
+    </div>
+    <div class="footer-right">By cafe and win95</div>
+  </div>
+</footer>
+ <script src="/blog/jquery/jquery.min.js"></script>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/blog/" class="mobile-nav-link">首页</a>
+  
+    <a href="/blog/archives" class="mobile-nav-link">归档</a>
+  
+    <a href="/blog/about" class="mobile-nav-link">关于</a>
+  
+</nav>
+    <img class="back-to-top-btn" src="/images/fly-to-top.png"/>
+<script>
+// Elevator script included on the page, already.
+window.onload = function() {
+  var elevator = new Elevator({
+    selector:'.back-to-top-btn',
+    element: document.querySelector('.back-to-top-btn'),
+    duration: 1000 // milliseconds
+  });
+}
+</script>
+      
+
+  
+    <script>
+      var cloudTieConfig = {
+        url: document.location.href, 
+        sourceId: "",
+        productKey: "e2fb4051c49842688ce669e634bc983f",
+        target: "cloud-tie-wrapper"
+      };
+    </script>
+    <script src="https://img1.ws.126.net/f2e/tie/yun/sdk/loader.js"></script>
+    
+
+  
+
+
+
+
+
+
+
+<!-- author:forvoid begin -->
+<!-- author:forvoid begin -->
+
+<!-- author:forvoid end -->
+
+<!-- author:forvoid end -->
+
+
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      })
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      })
+    </script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/mathjax/MathJax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+ <script src="/blog/js/is.js"></script>
+
+
+  <link rel="stylesheet" href="/blog/fancybox/jquery.fancybox.css">
+  <script src="/blog/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/blog/js/script.js"></script>
+<script src="/blog/js/elevator.js"></script>
+  </div>
+<script src="/blog/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/blog/live2dw/assets/assets/hijiki.model.json"},"display":{"position":"right","width":200,"height":350},"mobile":{"show":true},"log":false});</script></body>
+</html>
